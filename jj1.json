@@ -1,0 +1,24 @@
+ {
+     "kind": "Pod",
+     "apiVersion": "v1",
+     "metadata":{
+         "name": "jj1",
+         "namespace": "default",
+         "labels": {
+             "name": "hello-reema1"
+         }
+     },
+     "spec": {
+         "containers": [{
+             "name": "jj1",
+             "image": "jj1",
+             "ports": [{"containerPort": 80}],
+             "resources": {
+                 "limits": {
+                     "memory": "128Mi",
+                     "cpu": "500m"
+                 }
+             }
+         }]
+     }
+ }
